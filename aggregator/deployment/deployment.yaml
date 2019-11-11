@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aggregator
+  labels:
+    app: aggregator
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bananas
+  template:
+    metadata:
+      labels:
+        app: bananas
+    spec:
+      containers:
+      - name: aggegator
+        image: dagonzadub/aggregator:1.2
+        ports:
+        - containerPort: 8085

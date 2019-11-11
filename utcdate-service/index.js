@@ -16,5 +16,5 @@ server.start((err) => {
   if (err) {
     throw err
   }
-  console.log('isodate-service started on port 3001')
+  console.log('utcdate-service started on port 3001')
 })

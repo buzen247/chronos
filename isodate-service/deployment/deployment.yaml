@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: isodate-service
+  labels:
+    app: isodate-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: isodate-service
+  template:
+    metadata:
+      labels:
+        app: isodate-service
+    spec:
+      containers:
+      - name: isodate
+        image: dagonzadub/isodate
+        ports:
+        - containerPort: 3000
