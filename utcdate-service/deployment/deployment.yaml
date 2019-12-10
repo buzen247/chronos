@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
       - name: utcdate
-        image: dagonzadub/utcdate
+        image: buzor/utcdate:1.3
         ports:
         - containerPort: 3001
+##      - containerPort: 3001

@@ -1,12 +1,12 @@
 {
   "name": "isodate-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "ISO Date Service",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Buzor Okoye",
   "license": "ISC",
   "dependencies": {
     "hapi": "^15.2.0",
